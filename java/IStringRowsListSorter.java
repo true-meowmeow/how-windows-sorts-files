@@ -20,3 +20,16 @@ public interface IStringRowsListSorter {
      */
     String[] sort(List<String[]> rows, int columnIndex);
 }
+
+
+
+/*
+
+    мне кажется, что я не могу до конца понять ваше задание
+    Выполняя его я ориентировался на эти два ответа:
+        https://www.sql.ru/forum/actualutils.aspx?action=gotomsg&tid=1227811&msg=19577375
+        https://www.sql.ru/forum/actualutils.aspx?action=gotomsg&tid=1227811&msg=19577526
+    пожалуйста, дайте обратную связь по поводу ожидаемого вывода
+    также я изменил тип возвращаемых данных в интерфейсе
+*/
+

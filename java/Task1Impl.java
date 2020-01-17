@@ -11,10 +11,16 @@ public class Task1Impl implements IStringRowsListSorter {
     // ваша реализация должна работать, как singleton. даже при использовании из нескольких потоков.
     public static final IStringRowsListSorter INSTANCE = new Task1Impl();
 
+    private Task1Impl() {}
+
+    public static IStringRowsListSorter getInstance() {
+        return INSTANCE;
+    }
+
 
     @Override
     public String[] sort(final List<String[]> rows, final int columnIndex) {
-        synchronized ("") {
+        synchronized (Task1Impl.class) {
             return insertSort(rows, columnIndex);
         }
     }
